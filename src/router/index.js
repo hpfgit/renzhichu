@@ -5,14 +5,13 @@ Vue.use(VueRouter);
 
 const routes = [
     {
-        name: 'home',
+        name: 'index',
         path: '/',
-        component: import('@/components/HelloWorld.vue')
+        component: () => import('@/views/home.vue')
     }
 ]
 
 const router = new VueRouter({
-    mode: 'hash',
     routes
 })
 
